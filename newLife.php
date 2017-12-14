@@ -14,8 +14,8 @@ session_start();
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css">
 
-    
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    
 
 
@@ -95,13 +95,13 @@ session_start();
 
 
 
-    
+    <script src="./js\min\common0.03012384108162003.min.js"></script><script src="./js\min\fightAndInteresting0.14543819166472094.min.js"></script><script src="./js\min\life0.8991956944750332.min.js"></script><script src="./js\min\recommend0.719732543637793.min.js"></script>
     <!--推荐-->
-    
+    <script src="./js\min\common0.03012384108162003.min.js"></script><script src="./js\min\fightAndInteresting0.14543819166472094.min.js"></script><script src="./js\min\life0.8991956944750332.min.js"></script><script src="./js\min\recommend0.719732543637793.min.js"></script>
     <!--搞笑和激励-->
-    
+    <script src="./js\min\common0.03012384108162003.min.js"></script><script src="./js\min\fightAndInteresting0.14543819166472094.min.js"></script><script src="./js\min\life0.8991956944750332.min.js"></script><script src="./js\min\recommend0.719732543637793.min.js"></script>
 
-    
+    <script src="./js\min\common0.03012384108162003.min.js"></script><script src="./js\min\fightAndInteresting0.14543819166472094.min.js"></script><script src="./js\min\life0.8991956944750332.min.js"></script><script src="./js\min\recommend0.719732543637793.min.js"></script>
 
 </body>
 </html>

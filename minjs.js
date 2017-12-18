@@ -3,7 +3,10 @@ let join = require('path').join;
 let paths = require('path');
 var compressor = require('node-minify');
 var hrf = require('hash-rename-file');
-
+var rf = require('rimraf');
+// rf('./js/hash',(err,data)=>{});
+// rf('./js/min',(err,data)=>{});
+// rf('./test2-life.php',(err,data)=>{});
 /**
  *
  * @param startPath  起始目录文件夹路径
@@ -97,4 +100,4 @@ function addMinHash(startPath) {
 
 findSync('./js');
 findSyncChange('./');
-addMinHash('./js/min')
+addMinHash('./js/min');

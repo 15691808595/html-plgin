@@ -4,9 +4,13 @@ let paths = require('path');
 var compressor = require('node-minify');
 var hrf = require('hash-rename-file');
 var rf = require('rimraf');
-// rf('./js/hash',(err,data)=>{});
-// rf('./js/min',(err,data)=>{});
-// rf('./test2-life.php',(err,data)=>{});
+fs.exists('./js/hash',(data)=>{
+    data&&rf('./js/hash',(err,data)=>{});
+});
+fs.exists('./js/min',(data)=>{
+    data&&rf('./js/min',(err,data)=>{});
+});
+
 /**
  *
  * @param startPath  起始目录文件夹路径
@@ -57,7 +61,7 @@ function findSyncChange(startPath) {
                         let result=data.toString().replace(reg, function (str) {
                             let str2=str.replace('</script>',''); // 去除后缀
                             let basename=str.replace('</script>','').substring(str2.lastIndexOf('/')+1,str2.lastIndexOf('.js')); // admin common
-                            if(/\/min\//.test(str2)){
+                            if(/\/min\//.test(str2)||/\/hash\//.test(str2)){
                                 return str;
                             }else {
 

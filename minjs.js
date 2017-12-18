@@ -3,10 +3,6 @@ let join = require('path').join;
 let paths = require('path');
 var compressor = require('node-minify');
 var hrf = require('hash-rename-file');
-var rf = require('rimraf');
-rf('./js/hash',(err,data)=>{});
-rf('./js/min',(err,data)=>{});
-rf('./test2-life.php',(err,data)=>{});
 
 /**
  *
@@ -98,22 +94,7 @@ function addMinHash(startPath) {
     }
     finder(startPath);
 }
-// 返回一个hash文件夹下哈希值路径数组
-function hashFileArr(startPath) {
-    function finder(_path) {
-        let files = fs.readdirSync(_path);
-        files.forEach((val, index) => {
-            let fPath = join(_path, val);
 
-            console.log(fPath);
-
-        });
-
-    }
-    finder(startPath);
-}
-
-// findSync('./js');
-// findSyncChange('./');
-// addMinHash('./js/min');
-hashFileArr('./js/hash');
+findSync('./js');
+findSyncChange('./');
+addMinHash('./js/min')

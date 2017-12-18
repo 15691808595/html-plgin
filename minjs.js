@@ -65,8 +65,8 @@ function findSyncChange(startPath) {
                             }
                         });
 
-                        fs.writeFile('test2-'+fPath,result,(err,data)=>{
-                            console.log(err+'test2-'+fPath+'文件已经替换成功');
+                        fs.writeFile(fPath,result,(err,data)=>{
+                            console.log(err+fPath+'文件已经替换成功');
                         })
                     });
                 }

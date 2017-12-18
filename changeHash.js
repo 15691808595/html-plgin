@@ -21,8 +21,8 @@ function findSyncChange(startPath) {
                     fs.readFile(fPath,(err,data)=>{
                         let result=data.toString().replace(reg, function (str) {
                             let str2=str.replace('</script>',''); // 去除后缀
-                            let basename=str.replace('</script>','').substring(str2.lastIndexOf('/')+1,str2.lastIndexOf('.js')); // admin common
-
+                            let b=str.replace('</script>','').substring(str2.lastIndexOf('/')+1,str2.lastIndexOf('.js')); // admin common
+                            let basename=b.replace('.min','');
                             if(/\/hash\//.test(str2)){
                                 return str;
                             }else {
@@ -31,12 +31,12 @@ function findSyncChange(startPath) {
                                     index=noHashFile.indexOf(basename);
                                 }
 
-                                return str.replace(basename,'hash/'+hashFile[index]);
+                                return str.replace('min/'+basename,'hash/'+hashFile[index]);
                             }
                         });
 
-                        fs.writeFile('test2-'+fPath,result,(err,data)=>{
-                            console.log(err+'test2-'+fPath+'文件已经替换成功');
+                        fs.writeFile(fPath,result,(err,data)=>{
+                            console.log(err+fPath+'文件已经替换成功');
                         })
                     });
                 }

@@ -95,13 +95,13 @@ session_start();
 
 
 
-    <script src="js/common.js"></script>
+    <script src="js/hash/common.min_9e4ad2c.min.js"></script>
     <!--推荐-->
-    <script src="./js/recommend.js"></script>
+    <script src="./js/hash/recommend.min_10a524e.min.js"></script>
     <!--搞笑和激励-->
-    <script src="./js/fightAndInteresting.js"></script>
+    <script src="./js/hash/fightAndInteresting.min_a869fd2.min.js"></script>
 
-    <script  src="js/life.js"></script>
+    <script src="js/hash/life.min_fdcd6a0.min.js"></script>
 
 </body>
 </html>
